@@ -108,20 +108,20 @@
 				<div class="row">
 					<div class="col-sm-12">
 						<div class="book-detail">
-							<div class="iq-card-body p-0">
-								<!-- <iframe src="./pdf-chapters/I_Introduction.pdf"  style="width: 100%; height: 100vh;"></iframe> -->
+							<div class="iq-card-body p-0" id="pdf-viewer" style="width: 100%; height: 100vh;">
+								<iframe src="./pdf-chapters/I_Introduction.pdf"  style="width: 100%; height: 100vh;"></iframe>
 								<!-- <embed
 									src= "./pdf-chapters/I_Introduction.pdf"
 									type="application/pdf"
 									style="width: 100%; height: 100vh;"
 								/> -->
-								<object 
+								<!-- <object 
 								data= "./pdf-chapters/I_Introduction.pdf"
 								type="application/pdf"
 								style="width: 100%; height: 100vh;"
 								>
 
-								</object>
+								</object> -->
 							</div>
 						</div>
 					</div>
@@ -146,6 +146,7 @@
 	<script src="js/jquery.min.js"></script>
 	<script src="js/popper.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
+	<script src="https://unpkg.com/pdfobject@2.3.0/pdfobject.js"></script>
 	<!-- Appear JavaScript -->
 	<script src="js/jquery.appear.js"></script>
 	<!-- Countdown JavaScript -->
@@ -196,5 +197,10 @@
 	<!-- Custom JavaScript -->
 	<script src="js/custom.js"></script>
 	<script src="js/script.js"></script>
+	<!-- <script>
+		var viewPDF = $("#pdf-viewer");
+		PDFObject.embed("./pdf-chapters/I_Introduction.pdf", viewPDF)
+	</script> -->
+	
 </body>
 </html>
