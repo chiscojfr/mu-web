@@ -315,3 +315,13 @@ NOTE: This file contains the styling for responsive Template.
 	.iq-search-bar .searchbox { width: 160px; }
 	.navbar-list li.nav-item.nav-icon > a { margin-top: 20px; margin-bottom: 20px; }
 }
+
+/* Custom */
+
+@media (min-width: 1024px) { 
+	#pdf-viewer-mobile {display: none;}
+ }
+
+ @media (max-width: 1024px) { 
+	#pdf-viewer-desktop {display: none;}
+ }
