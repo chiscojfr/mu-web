@@ -166,6 +166,12 @@ Index Of Script
                 jQuery(this).toggleClass('accordion-active').children('div.accordion-details ').slideDown('slow');
             }
         });
+
+        jQuery(document).on("click", '.iq-accordion .accordion-active', function() {
+          if (!jQuery(this).children('div.accordion-details ').is(':hidden')) {
+            jQuery('.iq-accordion .iq-accordion-block').removeClass('accordion-active').children('div.accordion-details ').slideUp('slow');
+          }
+      });
         
         /*---------------------------------------------------------------------
         Page Loader
