@@ -47,6 +47,9 @@
 				<nav class="iq-sidebar-menu">
 					<ul id="iq-sidebar-toggle" class="iq-menu">
 						<li>
+	                    	<a href="chapter_apendix.html" class="iq-waves-effect"><span class="ripple rippleEffect"></span><i class="ri-book-2-line"></i><span>Go to next chapter</span><i class="ri-arrow-right-s-line iq-arrow-right"></i></a>
+	                    </li>
+						<li class="active active-menu">
 	                        <a href="#dashboard" class="iq-waves-effect" data-toggle="collapse" aria-expanded="false"><span class="ripple rippleEffect"></span><i class="las la-bars iq-arrow-left"></i><span>Table of Contents</span><i class="ri-arrow-right-s-line iq-arrow-right"></i></a>
 	                        <ul id="dashboard" class="iq-submenu collapse" data-parent="#iq-sidebar-toggle">
 								<li><a href="index.html"><i class="ri-book-2-line"></i>I: Introduction</a></li>
@@ -60,11 +63,11 @@
 								<li><a href="chapter_9.html"><i class="ri-book-2-line"></i>IX: Fill Balance</a></li>
 								<li><a href="chapter_10.html"><i class="ri-book-2-line"></i>X: Hold Stage</a></li>
 								<li><a href="chapter_11.html"><i class="ri-book-2-line"></i>XI: Cooling Stage</a></li>
-								<li><a href="chapter_12.html"><i class="ri-book-2-line"></i>XII: Process Limits</a></li>
+                                <li class="active"><a href="chapter_12.html"><i class="ri-book-2-line"></i>XII: Process Limits</a></li>
 								<li><a href="chapter_apendix.html"><i class="ri-book-2-line"></i>Appendices</a></li>
 							 </ul>
 	                     </li>
-						<li class="active active-menu">
+						<li>
 	                    	<a href="questions-form.html" class="iq-waves-effect"><span class="ripple rippleEffect"></span><i class="las la-edit"></i><span>questions or comments</span><i class="ri-arrow-right-s-line iq-arrow-right"></i></a>
 	                    </li>
 						<li>
@@ -104,10 +107,10 @@
 						</div>
 					 </a>
                   <div class="navbar-breadcrumb">
-                     <h5 class="mb-0">Questions or Comments</h5>
+                     <h5 class="mb-0">A Systematic Method for Injection Molding Optimization</h5>
                      <nav aria-label="breadcrumb">
                         <ul class="breadcrumb">
-                           <li class="breadcrumb-item active" aria-current="page">Post any Questions or Comments</li>
+                           <li class="breadcrumb-item active" aria-current="page">Chapter XII: Process Limists</li>
                         </ul>
                      </nav>
                   </div>
@@ -124,52 +127,16 @@
 		<div id="content-page" class="content-page">
 			<div class="container-fluid">
 				<div class="row">
-					<div class="col-sm-6 offset-sm-3">
-						<div class="iq-card">
-						   <div class="iq-card-header d-flex justify-content-between">
-							  <div class="iq-header-title">
-								 <h4 class="card-title">Leave any questions or comments about any chapter of Universal Molding™								</h4>
-							  </div>
-						   </div>
-						   <div class="iq-card-body">
-							  <div id="message-info"></div>
-							  <form id="contactform" method="post">
-								 <div class="form-group">
-									<label for="name">Name</label>
-									<input type="text" class="form-control" id="name" name="name" value="" required placeholder="Enter your name">
-								 </div>
-								 <div class="form-group">
-									<label for="email">Email</label>
-									<input type="email" class="form-control" id="email" name="email" value="" required placeholder="Enter your email">
-								 </div>
-								 <div class="form-group">
-									<label for="chapter">Chapter</label>
-									<select class="form-control" id="chapter" name="chapter">
-										<option selected="" value="#">Choose a chapter...</option>
-										<option>Chapter I: Introduction</option>
-										<option>Chapter II: Injection Molding Process Parameters</option>
-										<option>Chapter III: Process Graphs</option>
-										<option>Chapter IV: Plastic Morphology</option>
-										<option>Chapter V: Auxiliary Equipment</option>
-										<option>Chapter VI: Molding from the Desk</option>
-										<option>Chapter VII: Machine Rheology</option>
-										<option>Chapter VIII: Determining Injection Speed</option>
-										<option>Chapter IX: Verifying Fill Balance</option>
-										<option>Chapter X: Determining Hold Stage Parameters</option>
-										<option>Chapter XI: Determining Cooling Stage Parameters</option>
-									</select>
-								 </div>
-								 <div class="form-group">
-									<label for="message">Your comment or question</label>
-									<textarea class="form-control" id="message" rows="3" required placeholder="Enter your comment or question here..."></textarea>
-								 </div>
-								 <div class="form-group">
-									<button id="submit" type="submit" class="btn btn-primary">Submit</button>
-								 </div>
-							  </form>
-						   </div>
+					<div class="col-sm-12">
+						<div class="book-detail">
+							<div class="iq-card-body p-0" id="pdf-viewer-desktop" style="width: 100%; height: 100vh; margin-top: -62px;">
+								<iframe src="./pdf-chapters/XII_Process_Limits.pdf"  style="width: 100%; height: 100vh;" frameborder="5"></iframe>
+							</div>
+							<div class="iq-card-body p-0" id="pdf-viewer-mobile" style="width: 100%; height: 100vh;">
+								<iframe src="https://docs.google.com/viewer?url=https://chiscojfr.github.io/mu-web/pdf-chapters/XII_Process_Limits.pdf&embedded=true"  style="width: 100%; height: 100vh;" frameborder="5"></iframe>
+							</div>
 						</div>
-					 </div>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -238,9 +205,8 @@
 	<script src="js/style-customizer.js"></script>
 	<!-- Chart Custom JavaScript -->
 	<script src="js/chart-custom.js"></script>
-	<script src="js/custom.js"></script>
 	<!-- Custom JavaScript -->
-	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+	<script src="js/custom.js"></script>
 	<script src="js/script.js"></script>
 </body>
 </html>
